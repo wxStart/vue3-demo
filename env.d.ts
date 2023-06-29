@@ -6,3 +6,8 @@ declare module '*.vue' {
 
   export default vueComponent
 }
+
+declare module 'mitt' {
+  const content:any
+  export default content
+}

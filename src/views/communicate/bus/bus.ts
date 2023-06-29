@@ -1,5 +1,5 @@
 import mitt from 'mitt'
 
-const $bus = (mitt as any)()
+const $bus = mitt()
 
 export default $bus
