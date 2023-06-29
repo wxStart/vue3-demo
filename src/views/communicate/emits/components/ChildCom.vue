@@ -2,15 +2,20 @@
   <div>
     <div>name:{{ info.name }}</div>
     <div>age:{{ info.age }}</div>
-    <button @click="changeInfo">改变数据</button>
+    <button @click="onClick">改变数据</button>
   </div>
 </template>
 
 <script setup lang="ts">
+import {} from 'vue'
 defineProps<{
   info: { name: string; age: Number }
-  changeInfo: (payload: MouseEvent) => void
 }>()
+const $emits = defineEmits(['on-click'])
+
+const onClick = function () {
+  $emits('on-click', 'data')
+}
 </script>
 
 <style scoped></style>

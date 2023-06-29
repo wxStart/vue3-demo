@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="ul">
     <li v-for="route in routes" :key="route.path">
       <RouterLink :to="route.path">{{ route.name }}</RouterLink>
     </li>
@@ -20,6 +20,26 @@ const routes: [RouteItem] = [
   {
     path: 'props',
     name: 'props'
+  },
+  {
+    path: 'emits',
+    name: 'emits'
+  },
+  {
+    path: 'event_bug',
+    name: 'event_bug'
+  },
+  {
+    path: 'v_model',
+    name: 'v_model'
+  },
+  {
+    path: 'ref-parent',
+    name: 'ref-parent'
+  },
+  {
+    path: 'provide-inject',
+    name: 'provide-inject'
   }
 ].map((el) => ({
   ...el,
@@ -27,4 +47,11 @@ const routes: [RouteItem] = [
 })) as [RouteItem]
 </script>
 
-<style scoped></style>
+<style scoped>
+.ul {
+  display: flex;
+  > li {
+    margin: 6px 12px;
+  }
+}
+</style>

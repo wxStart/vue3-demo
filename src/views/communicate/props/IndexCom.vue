@@ -10,6 +10,7 @@ const changeInfo = (): void => {
 </script>
 
 <template>
+  <h3>defineProps</h3>
   <ChildCom :info="info" :changeInfo="changeInfo"> </ChildCom>
 </template>
 
