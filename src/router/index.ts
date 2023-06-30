@@ -47,9 +47,17 @@ const router = createRouter({
           path: 'slot',
           name: 'slot',
           component: () => import('../views/communicate/slot/IndexCom.vue')
-        },
-        
+        }
       ]
+    },
+    {
+      path: '/',
+      redirect: '/index'
+    },
+    {
+      path: '/index',
+      name: 'home',
+      component: () => import('../views/home/HomeView.vue')
     }
   ]
 })
