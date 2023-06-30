@@ -11,7 +11,7 @@
 const props = defineProps(['number', 'size'])
 const $emit = defineEmits(['update:number', 'update:size'])
 const onClick = function () {
-  $emit('update:number', props.number + 10);
+  $emit('update:number', props.number + 10)
   $emit('update:size', props.size + 11)
 }
 </script>

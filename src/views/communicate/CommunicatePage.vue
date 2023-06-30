@@ -49,7 +49,6 @@ const routes: [RouteItem] = [
     path: 'slot',
     name: 'slot'
   }
-  
 ].map((el) => ({
   ...el,
   path: `${basepath}/${el.path}`

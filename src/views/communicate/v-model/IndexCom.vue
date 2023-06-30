@@ -5,7 +5,7 @@ import ChildCom from './components/ChildCom.vue'
 const number = ref(0)
 const size = ref(0)
 
-// 
+//
 </script>
 
 <template>
