@@ -37,7 +37,17 @@ const router = createRouter({
           path: 'provide-inject',
           name: 'provide-inject',
           component: () => import('../views/communicate/provide-inject/IndexCom.vue')
-        }
+        },
+        {
+          path: 'pinia',
+          name: 'pinia',
+          component: () => import('../views/communicate/pinia/IndexCom.vue')
+        },
+        {
+          path: 'slot',
+          name: 'slot',
+          component: () => import('../views/communicate/slot/IndexCom.vue')
+        },
         
       ]
     }

@@ -40,7 +40,16 @@ const routes: [RouteItem] = [
   {
     path: 'provide-inject',
     name: 'provide-inject'
+  },
+  {
+    path: 'pinia',
+    name: 'pinia'
+  },
+  {
+    path: 'slot',
+    name: 'slot'
   }
+  
 ].map((el) => ({
   ...el,
   path: `${basepath}/${el.path}`

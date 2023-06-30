@@ -16,7 +16,7 @@ provide('changeInfo', changeInfo)
 </script>
 
 <template>
-  <h3>defineProps</h3>
+  <h3>Provide 和 Inject</h3>
   <ChildCom> </ChildCom>
 </template>
 
