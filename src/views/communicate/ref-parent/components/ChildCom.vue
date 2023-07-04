@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 const number = ref(10)
-const onClick = function ($parent) {
+const onClick = function ($parent: any) {
   console.log('$parent: ', $parent)
   $parent.number -= 10
   // $parent.onChange()

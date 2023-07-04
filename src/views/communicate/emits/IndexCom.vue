@@ -3,7 +3,7 @@ import { reactive } from 'vue'
 import ChildCom from './components/ChildCom.vue'
 
 const info = reactive({ name: 'wahaha', age: 12 })
-const changeInfo = (data): void => {
+const changeInfo = (data: unknown): void => {
   console.log('data: ', data)
   info.name += '~!'
   info.age += 1

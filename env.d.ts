@@ -11,3 +11,8 @@ declare module 'mitt' {
   const content:any
   export default content
 }
+
+declare module 'element-plus/es/locale/lang/zh-cn' {
+  const content:any
+  export default content
+}

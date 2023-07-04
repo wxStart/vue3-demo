@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import $bus from '../bus'
-$bus.on('add2', (e) => {
+$bus.on('add2', (e: unknown) => {
   console.log('e2222: ', e)
 })
 
